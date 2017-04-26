@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+
+<title>
+REVIEWS Powered by SubscriberVoice
+</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="voc-widget.css" />
+</head>
+<body>
+<button  class="btn" id="sv-sidebar-widget-btn" onclick="openSidebar()"><span class="icon-up"></span> Reviews</button>
+<!-- Full Page Transparent Overlay -->
+<div id="page-overlay" class="container page-overlay hidden" onclick="closeSidebar()"></div>
+<!-- END Overlay -->
+
+<div id="widget-container" class="hidden" >
+	<div id="menu-logo-box" class="floating-box col-md-6 col-md-offset-3 col-xs-12">
+		<div id="menu-logo-container" class="col-md-2 col-xs-2 col-xs-offset-5 col-md-offset-5">
+			<img src="sv-icon-96.png" id="sv-menu-logo" />
+		</div>
+	</div>
+	<!-- SIDEBAR CONTAINER -->
+	<div id="sidebar-container" class="floating-box sidebar-container col-md-6 col-md-offset-3 col-xs-12">
+		<!-- SCROLLING CONTAINER -->
+		<div class="col-md-12 col-xs-12 display-scroll">
+			<!-- SIDEBAR CLOSE -->
+			<div class="col-md-12 col-xs-12" id="sidebar-close-container">
+				 <button class="close-btn btn btn-sm" id="sidebar-close-btn" onclick="closeSidebar()"> X </button>
+			</div>
+			<!-- END CLOSE -->
+			<!-- SIDEBAR HEADER -->
+			<div class="sidebar-header col-md-12 col-xs-12" id="client-header">
+				<div class="col-md-3 col-sm-4 col-xs-12 text-center" >
+					<div id="indicatorContainerWrap" >
+						<div class="client-rating-stars text-center col-xs-12 col-md-12 " id="indicatorContainer" style="padding-left:50px;padding-top:25px;">
+							<span class="" id="client-rating-value">0</span><br/><span class="">of 5</span>
+						</div>	
+					</div>	
+				</div>
+				<div title="Client History" class="col-md-9 col-sm-8 col-xs-12 text-center client-details">
+					<div title="Client Rating" class="col-xs-12 col-md-12 text-center client-rating" id="client-rating"></div>
+					<div title="Total Reviews" class="col-xs-12 col-md-12 text-center client-reviews lead" >
+						Based on <span class="" id="client-reviews-total">-</span> validated reviews
+					</div>
+				</div>
+			</div>
+			<!-- END HEADER -->
+			<!-- SIDEBAR CONTENT -->
+			<div class="container container-fluid sidebar-content" id="client-content"></div>
+			<!-- END CONTENT -->
+			<!-- SIDEBAR FOOTER -->
+			<div class=" sidebar-footer col-md-12 col-xs-12" id="">
+				<div class="sv-footer-write-review col-xs-6 col-md-6">
+				<a href="https://www.subscribervoice.com/seal/0199be83dd8149858a3c47510bd135d1/" target="_blank" class="btn btn-xl btn-sv" id="sv-write-review-btn" style="" > 
+				<span class="glyphicon glyphicon-edit" style="margin-right:10px;"></span>
+				write a review </a>
+				</div>
+				<div class="help-block sv-powered-logo col-xs-6 col-md-6">Powered by
+					<a href="https://www.subscribervoice.com/" class="btn" target="_blank"> <img src="subscribervoice-logo.png"  class="sv-logo-img" /> </a>
+				</div>
+			</div>
+			<!-- END FOOTER -->	
+		</div>
+		<!-- END SCROLL -->
+	</div>
+	<!-- END SIDEBAR CONTAINER -->
+</div>
+<!-- END WIDGET CONTAINER -->
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="voc-widget.js"></script>
+</body>
+</html>
